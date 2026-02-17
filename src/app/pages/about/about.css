@@ -61,3 +61,9 @@
   color: #a8a8b3;
   line-height: 1.6;
 }
+
+.about-image {
+  max-width: 80%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

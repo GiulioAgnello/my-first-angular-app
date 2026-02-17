@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-
+import { Rotation } from '../../rotation/rotation';
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [Rotation],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
-export class About {
-
-}
+export class About {}
