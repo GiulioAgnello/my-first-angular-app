@@ -29,17 +29,6 @@
   flex-wrap: wrap;
 }
 
-.about-card {
-  background-color: #1a1a2e;
-  border-radius: 16px;
-  padding: 2.5rem 2rem;
-  width: 300px;
-  border: 1px solid #0f3460;
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-}
-
 .about-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(233, 69, 96, 0.2);
@@ -48,13 +37,11 @@
 .about-icon {
   font-size: 3rem;
   display: block;
-  margin-bottom: 1.5rem;
 }
 
 .about-card h3 {
   font-size: 1.5rem;
   color: #e94560;
-  margin-bottom: 1rem;
 }
 
 .about-card p {

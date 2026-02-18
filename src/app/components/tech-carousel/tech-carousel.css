@@ -1,0 +1,76 @@
+.tech-carousel {
+  padding: 3rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-carousel::before,
+.tech-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tech-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #0f3460, transparent);
+}
+
+.tech-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #0f3460, transparent);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 4rem;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 120px;
+}
+
+.tech-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.8);
+  transition:
+    filter 0.3s,
+    transform 0.3s;
+}
+
+.tech-item:hover img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.1);
+}
+
+.tech-item span {
+  color: #a8a8b3;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,13 @@
+<div class="tech-carousel">
+  <div class="carousel-track">
+    <div class="tech-item" *ngFor="let tech of technologies">
+      <img [src]="tech.logo" [alt]="tech.name" />
+      <span>{{ tech.name }}</span>
+    </div>
+    <!-- loop -->
+    <div class="tech-item" *ngFor="let tech of technologies">
+      <img [src]="tech.logo" [alt]="tech.name" />
+      <span>{{ tech.name }}</span>
+    </div>
+  </div>
+</div>
