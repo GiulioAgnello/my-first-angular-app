@@ -3,16 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #858585;
+  background-color: #000000;
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.logo {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .navbar-links {
@@ -32,10 +26,14 @@
 }
 
 .navbar-links a:hover {
-  color: #b700ff;
+  color: #e94560;
+  border-bottom: #e94560 2px solid;
+  padding-bottom: 0.5rem;
 }
 
 .navbar-links a.active {
   color: #e94560;
   font-weight: bold;
+  border-bottom: #e94560 2px solid;
+  padding-bottom: 0.5rem;
 }
