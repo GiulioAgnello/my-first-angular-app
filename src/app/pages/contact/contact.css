@@ -82,3 +82,12 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
 }
+
+.cardContact {
+  background-color: #1a1a2e;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid #0f3460;
+  text-align: left;
+  margin-top: 2rem;
+}

@@ -7,7 +7,7 @@
     </p>
     <div className="row g-4">
       @for (contact of contacts; track contact.id) {
-        <div className="col-6 col-md-6 col-lg-4">
+        <div className=" cardContact col-6 col-md-6 col-lg-4">
           <h3>{{ contact.label }}</h3>
           <p>{{ contact.value }}</p>
           @if (contact.href) {
